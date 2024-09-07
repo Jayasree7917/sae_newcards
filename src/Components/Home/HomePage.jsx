@@ -56,14 +56,14 @@ const HomePage = () => {
 
   useEffect(() => {
     if (progressBarRef.current) {
-      progressBarRef.current.style.width = `${progress}%`;  // Use backticks for template literals
+      progressBarRef.current.style.width = `${progress}%`;
     }
   }, [progress]);
   
 
   const handleClick = (index) => {
     setPostIndex(index);
-    setProgress(0); // Reset progress when clicking on a post
+    setProgress(0);
   };
 
   return (
